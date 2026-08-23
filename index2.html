@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your 5K Runbook</title>
+<style>
+  :root {
+    --bg: #0f1420; --card: #1a2233; --text: #e8ecf4; --muted: #9aa5b8;
+    --accent: #4fc3f7; --good: #66bb6a; --warn: #ffa726; --bad: #ef5350;
+    --z1: #66bb6a; --z2: #4fc3f7; --z3: #ffee58; --z4: #ffa726; --z5: #ef5350;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  header { padding: 2rem 1rem 1rem; text-align: center; }
+  header h1 { font-size: 1.6rem; }
+  header p { color: var(--muted); font-size: .95rem; }
+  nav { position: sticky; top: 0; background: rgba(15,20,32,.95); backdrop-filter: blur(8px); display: flex; overflow-x: auto; gap: .25rem; padding: .5rem 1rem; border-bottom: 1px solid #2a3450; z-index: 10; }
+  nav a { color: var(--muted); text-decoration: none; font-size: .85rem; padding: .35rem .7rem; border-radius: 999px; white-space: nowrap; }
+  nav a:hover { background: var(--card); color: var(--text); }
+  main { max-width: 720px; margin: 0 auto; padding: 1rem; }
+  section { margin: 2rem 0; }
+  h2 { font-size: 1.25rem; margin-bottom: .75rem; border-bottom: 2px solid #2a3450; padding-bottom: .4rem; }
+  h3 { font-size: 1.02rem; margin: 1rem 0 .4rem; color: var(--accent); }
+  p, li { font-size: .95rem; color: #cfd6e4; }
+  ul, ol { padding-left: 1.3rem; margin: .5rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: .75rem 0; font-size: .9rem; }
+  th, td { padding: .5rem .6rem; text-align: left; border-bottom: 1px solid #2a3450; }
+  th { color: var(--muted); font-weight: 600; font-size: .8rem; text-transform: uppercase; }
+  .card { background: var(--card); border-radius: 12px; padding: 1rem 1.1rem; margin: .75rem 0; }
+  .callout { border-left: 4px solid var(--accent); background: var(--card); padding: .8rem 1rem; border-radius: 0 10px 10px 0; margin: .9rem 0; }
+  .callout.warn { border-color: var(--warn); }
+  .pill { display: inline-block; padding: .1rem .55rem; border-radius: 999px; font-weight: 700; font-size: .85rem; color: #0f1420; }
+  .z1 { background: var(--z1); } .z2 { background: var(--z2); } .z3 { background: var(--z3); } .z4 { background: var(--z4); } .z5 { background: var(--z5); }
+  .big { font-size: 1.5rem; font-weight: 800; color: var(--accent); }
+  footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 2rem 1rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏃 Your 5K Runbook</h1>
+  <p>6 weeks · Aug 24 → 5K time trial Sat Oct 3</p>
+</header>
+
+<nav>
+  <a href="#zones">Zones</a>
+  <a href="#talktest">Talk Test</a>
+  <a href="#plan">Plan</a>
+  <a href="#why">The Science</a>
+  <a href="#fuel">Runner 101</a>
+  <a href="#rules">Golden Rules</a>
+  <a href="#log">Run Log</a>
+</nav>
+
+<main>
+
+<section id="zones">
+  <h2>❤️ Your Heart Rate Zones</h2>
+  <p>Calculated with the Karvonen method from an <strong>estimated</strong> max HR of 194 (age-based, 220 − 26) and an assumed resting HR of 60.</p>
+  <table>
+    <tr><th>Zone</th><th>Feel</th><th>Heart Rate</th></tr>
+    <tr><td><span class="pill z1">Z1</span></td><td>Easy / Recovery</td><td><strong>143–157</strong></td></tr>
+    <tr><td><span class="pill z2">Z2</span></td><td>Steady / Aerobic Base</td><td><strong>157–170</strong></td></tr>
+    <tr><td><span class="pill z3">Z3</span></td><td>Tempo — moderately hard</td><td><strong>170–177</strong></td></tr>
+    <tr><td><span class="pill z4">Z4</span></td><td>Threshold — hard</td><td><strong>177–183</strong></td></tr>
+    <tr><td><span class="pill z5">Z5</span></td><td>VO2 Max — very hard</td><td><strong>183–194</strong></td></tr>
+  </table>
+  <div class="callout">
+    <strong>The one number to remember: 170.</strong> On easy and long runs, stay under it. Most of your training lives in Zone 2 (157–170).
+  </div>
+  <div class="callout warn">
+    <strong>These zones are estimates.</strong> No real max or resting HR data yet — so they'll be refined as data comes in:
+    <ul>
+      <li>Measure your <strong>resting HR</strong> on waking for 3 mornings (before getting up) and report the average.</li>
+      <li>If you ever see a number <strong>above 194</strong> on a run, your true max is higher — the zones will be recalculated.</li>
+      <li>Until then, the <strong>Talk Test below outranks the watch.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section id="talktest">
+  <h2>🗣️ The Talk Test — Your Primary Gauge</h2>
+  <p>Since the zone numbers are estimates, your body is the more reliable instrument for now:</p>
+  <ul>
+    <li><strong>Easy runs:</strong> you should be able to speak <strong>full sentences out loud</strong> without gasping. If you can't — slow down or walk 30 seconds. No exceptions, no shame in walk breaks.</li>
+    <li><strong>Comfortably hard:</strong> a few words at a time, not sentences.</li>
+    <li><strong>Hard:</strong> talking is off the table.</li>
+  </ul>
+  <div class="callout">
+    Use the talk test as the governor and the heart rate number as the sanity check — if both agree the run is easy, it's easy. Heat and humidity can push HR up 5–10 bpm; the talk test doesn't lie.
+  </div>
+</section>
+
+<section id="plan">
+  <h2>📅 Your 6-Week Plan (Aug 24 → Oct 3)</h2>
+  <p><strong>3 runs per week</strong> — suggested Tuesday / Thursday / Saturday. Almost everything is easy (Zone 2 / full-sentences pace). One run a week, the Thursday <em>benchmark</em>, is your progress meter.</p>
+  <table>
+    <tr><th>Week</th><th>Run 1 (Tue)</th><th>Run 2 (Thu)</th><th>Run 3 (Sat)</th></tr>
+    <tr><td><strong>1</strong><br>Aug 24–30</td><td>25 min easy</td><td>25 min easy</td><td>35 min easy</td></tr>
+    <tr><td><strong>2</strong><br>Aug 31–Sep 6</td><td>30 min easy</td><td>10 min easy + <strong>2 km benchmark</strong> (first one — sets your baseline) + cooldown</td><td>40 min easy</td></tr>
+    <tr><td><strong>3</strong><br>Sep 7–13</td><td>30 min easy</td><td>10 min easy + <strong>2 km benchmark</strong> + cooldown</td><td>45 min easy</td></tr>
+    <tr><td><strong>4</strong><br>Sep 14–20</td><td>30 min easy + 4 strides*</td><td>10 min easy + <strong>2 km benchmark</strong> + cooldown</td><td>50 min easy</td></tr>
+    <tr><td><strong>5</strong><br>Sep 21–27</td><td>30 min easy</td><td>10 min easy + <strong>3 km at benchmark pace</strong> — dress rehearsal</td><td>40 min easy</td></tr>
+    <tr><td><strong>6</strong><br>Sep 28–Oct 4</td><td>25 min easy</td><td>20 min easy + 4 strides</td><td><strong>🏁 5K time trial — Sat Oct 3</strong></td></tr>
+  </table>
+  <p style="font-size:.85rem; color: var(--muted);">*Strides = 20–30 second smooth accelerations to about 90% effort at the end of a run, walking fully back between each. Not sprints — they teach fast, relaxed form. 5 minutes total.</p>
+
+  <h3>The Thursday benchmark</h3>
+  <p>Same flat route every week: 10 min easy warm-up, then <strong>2 km at "comfortably hard"</strong> — a few-words-at-a-time effort, finishing feeling like one more hard minute was possible. Note the time and average heart rate.</p>
+  <div class="callout">
+    <strong>Week 2 sets your baseline — there's no target to hit.</strong> From week 3, aim to run the <em>same effort</em> and watch what happens: either the time drops, or the same time costs a lower heart rate. Both are proof the engine is growing. Judge the trend over 2–3 weeks, not any single Thursday.
+  </div>
+  <div class="callout warn">
+    <strong>Got a real race?</strong> This plan ends in a self-timed 5K on Sat Oct 3. If there's an actual race on the calendar, the plan shifts to end there instead — say the word.
+  </div>
+</section>
+
+<section id="why">
+  <h2>🔬 The Science, Simply</h2>
+
+  <h3>How endurance is built (why Zone 2 works)</h3>
+  <p>Here's the trick that makes easy running so effective: <strong>by Zone 2, your heart is already pumping nearly as much blood per beat as it does at maximum effort.</strong> Stroke volume — the amount of blood pushed per beat — plateaus around this intensity. So the heart is training at close to full effect <em>without you going anywhere near all-out</em>.</p>
+  <p>Meanwhile, hours in Zone 2 drive the quieter adaptations that actually make you faster:</p>
+  <ul>
+    <li><strong>More mitochondria</strong> — the power plants in your muscle cells multiply, so each stride costs less energy.</li>
+    <li><strong>More capillaries</strong> — new blood vessels grow into the working muscles, delivering oxygen more efficiently.</li>
+    <li><strong>Fat adaptation</strong> — your body gets better at burning fat for fuel, sparing limited carbohydrate stores for when you need them.</li>
+  </ul>
+  <p>The result: the same pace costs a lower heart rate every week. You run longer without tiring — that's the whole game.</p>
+
+  <h3>How speed is built</h3>
+  <p>For a 5K, speed is roughly <strong>90% engine, 10% sharpening</strong>. The Zone 2 base <em>is</em> the speed work — a bigger aerobic engine means race pace feels cheaper. The last 10% comes from short, controlled faster efforts (strides, benchmark runs) that teach relaxed fast form and make race rhythm familiar. Those get added to the plan once the base is established.</p>
+</section>
+
+<section id="fuel">
+  <h2>🍌 Runner 101</h2>
+  <h3>Fueling</h3>
+  <ul>
+    <li>Runs under 60 minutes need no mid-run fuel. A small carb snack (banana, toast) 1–2 hours before helps if running feels flat.</li>
+    <li>After runs, eat a normal meal within a couple of hours — protein + carbs. Nothing fancy required at this distance.</li>
+  </ul>
+  <h3>Hydration</h3>
+  <ul>
+    <li>Drink to thirst through the day; pale-yellow urine is the check.</li>
+    <li>For runs under an hour in mild weather, you don't need to carry water. In heat, drink a glass 30 min before and rehydrate after.</li>
+  </ul>
+  <h3>Sleep &amp; recovery</h3>
+  <ul>
+    <li>Adaptation happens between runs, not during them. 7–9 hours of sleep is the best legal performance enhancer there is.</li>
+    <li>Rest days are training days — don't fill them with junk miles.</li>
+  </ul>
+  <h3>Shoes &amp; soreness</h3>
+  <ul>
+    <li>Any comfortable running shoe works. Replace around 500–800 km / 300–500 miles.</li>
+    <li><strong>General muscle soreness</strong> that fades as you warm up = normal. <strong>Sharp, localized pain</strong> that changes your stride = stop, rest, don't run through it.</li>
+  </ul>
+</section>
+
+<section id="rules">
+  <h2>📜 Golden Rules</h2>
+  <div class="card">
+    <ol>
+      <li>🗣️ <strong>Full sentences on easy runs.</strong> Talk test first, watch second. Walk breaks are allowed and smart.</li>
+      <li>🐢 <strong>Stay under 170 on easy and long runs</strong> (sanity check while zones are still estimates).</li>
+      <li>📆 <strong>Miss a run? Skip it.</strong> Never stack missed runs onto the next day — resume the schedule where the calendar is.</li>
+      <li>🩹 <strong>Sharp pain = stop.</strong> Soreness is fine; pain that alters your stride is not.</li>
+      <li>📈 <strong>Judge trends, not single runs.</strong> Heat, sleep, and stress swing any one run. Two to three weeks tells the truth.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="log">
+  <h2>📖 Run Log &amp; Coach Feedback</h2>
+  <p>Every logged run gets a card here with splits, heart rate, and one piece of coaching feedback.</p>
+  <div class="card">
+    <p style="color: var(--muted); text-align:center; padding: 1rem 0;">No runs logged yet — lace up! 👟<br>Send your first run and it appears here.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Zones: Karvonen method (Max 194 estimated / Rest 60 assumed) · Zones will be recalibrated as real data arrives
+</footer>
+
+</body>
+</html>
